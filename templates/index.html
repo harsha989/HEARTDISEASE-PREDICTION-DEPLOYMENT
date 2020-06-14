@@ -23,19 +23,19 @@
         <!-- Text Area -->
     	<div class="ml-container">
     		<form action="{{ url_for('predict') }}" method="POST">
-                <input class="form-input" type="text" name="age" placeholder="Age eg. 63"><br>
-                <input class="form-input" type="text" name="sex" placeholder="Sex (1 = male; 0 = female) "><br>
-                <input class="form-input" type="text" name="cp" placeholder="Chest Pain 1.typicalangina,2.atypicalangina,3.non-anginalpain,4.asymptomatic"><br>
-                <input class="form-input" type="text" name="restbp" placeholder="resting blood pressure (in mm Hg) "><br>
-                <input class="form-input" type="text" name="chol" placeholder="serum cholesterol in mg/dl "><br>
+                <input class="form-input" type="text" name="age" placeholder="Age "><br>
+                <input class="form-input" type="text" name="sex" placeholder="Sex (1 = male 0 = female) "><br>
+                <input class="form-input" type="text" name="cp" placeholder="Chest Pain(1-4) "><br>
+                <input class="form-input" type="text" name="restbp" placeholder="resting blood pressure (mm Hg) "><br>
+                <input class="form-input" type="text" name="chol" placeholder="serum cholesterol (mg/dl) "><br>
                 <input class="form-input" type="text" name="fbs" placeholder="fasting blood sugar "><br>
                 <input class="form-input" type="text" name="restecg" placeholder="resting electrocardiographic results "><br>
                 <input class="form-input" type="text" name="thalach" placeholder="maximum heart rate achieved "><br>
-                <input class="form-input" type="text" name="exang" placeholder="exercise induced angina (1 = yes; 0 = no)"><br>
+                <input class="form-input" type="text" name="exang" placeholder="exercise induced angina (1 = yes 0 = no)"><br>
                 <input class="form-input" type="text" name="oldpeak" placeholder="ST depression induced by exercise relative to rest "><br>
-                <input class="form-input" type="text" name="slope" placeholder="slope 1.upsloping,2.flat,3.downsloping "><br>
+                <input class="form-input" type="text" name="slope" placeholder="slope (1-3) "><br>
                 <input class="form-input" type="text" name="ca" placeholder="number of major vessels (0-3) colored by fluoroscopy "><br>
-                <input class="form-input" type="text" name="thal" placeholder="thaliumheartscan 3.normal,6.fixeddefect,7.reversable defect"><br>
+                <input class="form-input" type="text" name="thal" placeholder="thalium heartscan (3,6,7)"><br>
 
 
         		<input type="submit" class="my-cta-button" value="Predict">
